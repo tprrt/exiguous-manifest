@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <default sync-j="5" revision="master"/>
+
+  <remote fetch="git://git.openembedded.org" name="openembedded"/>
+  <remote fetch="git://git.yoctoproject.org" name="yocto"/>
+  <remote fetch="git://github.com/tprrt" name="exiguous"/>
+
+  <!-- Openembedded layers -->
+  <project remote="openembedded" revision="master" name="bitbake" path="components/bitbake"/>
+  <project remote="openembedded" revision="master" name="openembedded-core" path="components/openembedded-core"/>
+  <project remote="openembedded" revision="master" name="meta-openembedded" path="components/meta-openembedded"/>
+  
+  <!-- Yocto layers -->
+  <project remote="yocto" revision="master" name="meta-yocto" path="components/meta-yocto"/>
+  <project remote="yocto" revision="master" name="meta-selinux" path="components/meta-selinux"/>
+
+  <project remote="yocto" revision="master" name="meta-intel" path="components/meta-intel"/>
+  <project remote="yocto" revision="master" name="meta-raspberrypi" path="components/meta-raspberrypi"/>
+  <project remote="yocto" revision="master" name="meta-intel" path="components/meta-ti"/>
+  
+  <!-- Exiguous layers -->
+  <project remote="exiguous" revision="master" name="meta-exiguous" path="components/meta-exiguous" />
+  <project remote="exiguous" revision="master" name="exiguous" path="combination/meta-exiguous" />
+
+</manifest>
