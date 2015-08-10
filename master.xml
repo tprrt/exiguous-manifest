@@ -18,10 +18,19 @@
 
   <project remote="yocto" revision="master" name="meta-intel" path="components/meta-intel"/>
   <project remote="yocto" revision="master" name="meta-raspberrypi" path="components/meta-raspberrypi"/>
-  <project remote="yocto" revision="master" name="meta-intel" path="components/meta-ti"/>
+  <project remote="yocto" revision="master" name="meta-ti" path="components/meta-ti"/>
 
   <!-- Exiguous layers -->
   <project remote="exiguous" revision="master" name="meta-exiguous" path="components/meta-exiguous" />
+
+  <!-- Combination -->
   <!-- <project remote="exiguous" revision="master" name="exiguous" path="combination/meta-exiguous" /> -->
+
+  <!-- Copy build tools to rootdir: Makefile, travis, circle, readme...  -->
+  <!-- <project remote="exiguous" revision="master" name="exiguous" path="components/meta-exiguous"> -->
+  <!--   <copyfile dest="scripts/Makefile" src="Makefile"/> -->
+  <!--   <copyfile dest="scripts/travis.yml" src=".travis.yml"/> -->
+  <!--   <copyfile dest="scripts/circle.yml" src="circle.yml"/> -->
+  <!-- </project> -->
 
 </manifest>
