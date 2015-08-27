@@ -15,6 +15,8 @@
   <!-- Yocto layers -->
   <project remote="yocto" revision="master" name="meta-yocto" path="components/meta-yocto"/>
   <project remote="yocto" revision="master" name="meta-selinux" path="components/meta-selinux"/>
+  <project remote="yocto" revision="master" name="meta-virtualization" path="components/meta-virtualization"/>
+  <project remote="yocto" revision="master" name="meta-security" path="components/meta-security"/>
 
   <project remote="yocto" revision="master" name="meta-intel" path="components/meta-intel"/>
   <project remote="yocto" revision="master" name="meta-raspberrypi" path="components/meta-raspberrypi"/>
