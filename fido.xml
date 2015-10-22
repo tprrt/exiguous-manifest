@@ -26,7 +26,7 @@
   <project remote="exiguous" revision="master" name="meta-exiguous" path="components/meta-exiguous" />
 
   <!-- Combination -->
-  <!-- <project remote="exiguous" revision="fido" name="exiguous" path="combination/meta-exiguous" /> -->
+  <!-- <project remote="exiguous" revision="fido" name="Exiguous" path="combination" /> -->
 
   <!-- Copy build tools to rootdir: Makefile, travis, circle, readme...  -->
   <!-- <project remote="exiguous" revision="fido" name="exiguous" path="components/meta-exiguous"> -->
