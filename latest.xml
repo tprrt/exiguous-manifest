@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <default sync-j="5" revision="master"/>
+
+  <remote fetch="git://git.openembedded.org" name="openembedded"/>
+  <remote fetch="git://git.yoctoproject.org" name="yocto"/>
+  <remote fetch="git://github.com/tprrt" name="origin"/>
+
+  <!-- Openembedded layers -->
+  <project remote="openembedded" revision="master" name="bitbake" path="src/bitbake" />
+  <project remote="openembedded" revision="master" name="openembedded-core" path="src" />
+  <project remote="openembedded" revision="master" name="meta-openembedded" path="src/meta-openembedded" />
+
+  <!-- Yocto layers -->
+  <project remote="yocto" revision="master" name="meta-yocto" path="src/meta-yocto" />
+  <project remote="yocto" revision="master" name="meta-virtualization" path="src/meta-virtualization" />
+  <project remote="yocto" revision="master" name="meta-security" path="src/meta-security" />
+
+  <project remote="yocto" revision="master" name="meta-intel" path="src/meta-intel" />
+  <project remote="yocto" revision="master" name="meta-raspberrypi" path="src/meta-raspberrypi" />
+  <project remote="yocto" revision="master" name="meta-ti" path="src/meta-ti" />
+
+  <!-- Exiguous layers -->
+  <project remote="origin" revision="master" name="meta-exiguous" path="src/meta-exiguous">
+    <linkfile dest="exiguous-init-build-env" src="scripts/exiguous-init-build-env" />
+    <linkfile dest="README.rst" src="README.rst" />
+    <linkfile dest="LICENSE" src="LICENSE" />
+  </project>
+
+</manifest>
