@@ -8,21 +8,21 @@
   <remote fetch="git://github.com/tprrt" name="origin"/>
 
   <!-- Openembedded layers -->
-  <project remote="openembedded" revision="master" name="bitbake" path="src/bitbake" />
-  <project remote="openembedded" revision="master" name="openembedded-core" path="src" />
-  <project remote="openembedded" revision="master" name="meta-openembedded" path="src/meta-openembedded" />
+  <project remote="openembedded" revision="master" name="bitbake" path="exiguous/bitbake" />
+  <project remote="openembedded" revision="master" name="openembedded-core" path="exiguous" />
+  <project remote="openembedded" revision="master" name="meta-openembedded" path="exiguous/meta-openembedded" />
 
   <!-- Yocto layers -->
-  <project remote="yocto" revision="master" name="meta-yocto" path="src/meta-yocto" />
-  <project remote="yocto" revision="master" name="meta-virtualization" path="src/meta-virtualization" />
-  <project remote="yocto" revision="master" name="meta-security" path="src/meta-security" />
+  <project remote="yocto" revision="master" name="meta-yocto" path="exiguous/meta-yocto" />
+  <project remote="yocto" revision="master" name="meta-virtualization" path="exiguous/meta-virtualization" />
+  <project remote="yocto" revision="master" name="meta-security" path="exiguous/meta-security" />
 
-  <project remote="yocto" revision="master" name="meta-intel" path="src/meta-intel" />
-  <project remote="yocto" revision="master" name="meta-raspberrypi" path="src/meta-raspberrypi" />
-  <project remote="yocto" revision="master" name="meta-ti" path="src/meta-ti" />
+  <project remote="yocto" revision="master" name="meta-intel" path="exiguous/meta-intel" />
+  <project remote="yocto" revision="master" name="meta-raspberrypi" path="exiguous/meta-raspberrypi" />
+  <project remote="yocto" revision="master" name="meta-ti" path="exiguous/meta-ti" />
 
   <!-- Exiguous layers -->
-  <project remote="origin" revision="master" name="meta-exiguous" path="src/meta-exiguous">
+  <project remote="origin" revision="master" name="meta-tprrt" path="exiguous/meta-tprrt">
     <linkfile dest="exiguous-init-build-env" src="scripts/exiguous-init-build-env" />
     <linkfile dest="README.rst" src="README.rst" />
     <linkfile dest="LICENSE" src="LICENSE" />

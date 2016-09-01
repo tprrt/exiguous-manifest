@@ -1,8 +1,8 @@
 ..
 .. -*- coding: utf-8; tab-width: 4; c-basic-offset: 4; indent-tabs-mode: nil -*-
 
-Tap runtime manifest
---------------------
+Exiguous manifest
+-----------------
 
 To get the runtime's source, you need to have `repo` installed and use it as:
 
